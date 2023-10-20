@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        
+        #form {
+          background-color: lightgray;
+          padding: 50px;
+          width: 30%;
+          border-style: solid;
+          border-color: orangered;
+        }
+        
+        #addEmp {
+            border-radius: 10px;
+            border-color: dodgerblue;
+            background-color: dodgerblue;
+            padding: 10px;  
+        }
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="form" method="post">
+        <label>8-Digit Employee ID</label><br>
+        <input type="text" id="empId" pattern="\d*" maxlength="8" required></input><br><br>
+        <label>Employee Name</label><br>
+        <input type="text" id="empName" required></input><br><br>
+        <label>Employee Extension</label><br>
+        <input type="text" id="empExtn" pattern="\d*" maxlength="4" required></input><br><br>
+        <label>Email</label> <br>
+        <input type="email" id="email" required></input><br><br>
+        <label>Department</label><br>
+        <select id="dept" name="" required>
+          <option value="administrative">Administrative</option>
+          <option value="executive">Executive</option>
+          <option value="engineering">Engineering</option>
+          <option value="marketing">Marketing</option>
+          <option value="qualityAssurance">Quality Assurance</option>
+          <option value="sales">Sales</option>   
+        </select> <br><br>
+        <input type="submit" id="addEmp" value="Add Employee"></input>
+    </form>
+
+</body>
+</html>
